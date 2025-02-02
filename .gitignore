@@ -1,0 +1,75 @@
+# MkDocs 构建目录
+site/
+
+# Python 虚拟环境
+venv/
+env/
+.env/
+.venv/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 依赖管理
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 环境配置文件
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+*.log
+
+# 本地配置文件
+mkdocs.local.yml
+
+# 临时文件
+*.tmp
+*.temp
+.temp/
+.cache/

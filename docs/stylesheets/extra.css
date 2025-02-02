@@ -1,0 +1,56 @@
+/* 导入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* 基础文本样式 */
+.md-typeset {
+    font-family: 'Noto Serif SC', FangSong, "仿宋", serif !important;
+}
+
+/* 英文内容 */
+.md-typeset :lang(en) {
+    font-family: "JetBrains Mono", monospace !important;
+}
+
+/* 代码块样式 */
+.md-typeset code,
+.md-typeset pre {
+    font-family: "JetBrains Mono", monospace !important;
+}
+
+/* 标题样式 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    font-weight: 600 !important;
+    font-family: 'Noto Serif SC', FangSong, "仿宋", serif !important;
+}
+
+/* 调整行高和其他排版细节 */
+.md-typeset p {
+    line-height: 1.7;
+}
+
+/* 优化链接样式 */
+.md-typeset a {
+    color: var(--md-accent-fg-color);
+    text-decoration: none;
+}
+
+.md-typeset a:hover {
+    text-decoration: underline;
+}
+
+/* 优化表格样式 */
+.md-typeset table:not([class]) {
+    font-size: .95em;
+}
+
+/* 优化引用块样式 */
+.md-typeset blockquote {
+    border-left: 4px solid var(--md-accent-fg-color);
+    color: var(--md-default-fg-color--light);
+}

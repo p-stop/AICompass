@@ -1,0 +1,69 @@
+site_name: AICompass
+theme:
+  features:
+    - navigation.footer
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: black
+      accent: deep purple
+
+    # # Light Mode
+    # - scheme: default
+    #   toggle:
+    #     icon: material/weather-night
+    #     name: Light mode
+    #   primary: deep purple
+    #   accent: deep orange
+nav:
+  - 欢迎: index.md
+  - 贡献指南: ContributionGuidelines.md
+  - 重要的辅学资源: important-source.md
+
+  - 大一上学期:
+    - 高等数学I: FirstYear_1/Calculus.md
+    - 线性代数: FirstYear_1/LinearAlgebra.md
+    - 大学物理上: FirstYear_1/CollegePhysics.md
+    - 程序设计I: FirstYear_1/Programming.md
+  
+  - 大一下学期:
+    - 高等数学II: FirstYear_2/Calculus.md
+    - 大学物理下: FirstYear_2/CollegePhysics.md
+    - 程序设计II: FirstYear_2/Programming.md
+    - 数字电路: FirstYear_2/DigitalCircuitsAndLogicDesign.md
+  
+  - 大二上学期:
+    - 概率统计: SecondYear_1/ProbabilityAndStatistics.md
+    - 离散数学: SecondYear_1/DiscreteMath.md
+    - 信号与系统: SecondYear_1/SignalsAndSystems.md
+    - 数据结构与算法: SecondYear_1/DataStructuresAndAlgorithms.md
+    - 高级语言程序设计: SecondYear_1/Python.md
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+    - stylesheets/extra.css
