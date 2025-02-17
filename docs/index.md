@@ -7,7 +7,7 @@ hide:
 <div class="hero-section">
     <div class="hero-content">
         <h1>AICompass</h1>
-        <p class="hero-subtitle">消除信息差，共建开放学习社区</p>
+        <p class="hero-subtitle">消除信息差，共享学习资源</p>
         <a href="ContributionGuidelines" class="cta-button">贡献指南</a>
     </div>
 </div>
