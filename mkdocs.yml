@@ -12,13 +12,13 @@ theme:
       primary: black
       accent: deep purple
 
-    # # Light Mode
-    # - scheme: default
-    #   toggle:
-    #     icon: material/weather-night
-    #     name: Light mode
-    #   primary: deep purple
-    #   accent: deep orange
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
 nav:
   - 欢迎: index.md
   - 贡献指南: ContributionGuidelines.md
@@ -49,6 +49,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -64,6 +65,16 @@ markdown_extensions:
   - admonition
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+      separator: "."
+      # 使用 Python 内置的 slugify 实现
+      slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tilde
 
 extra_css:
     - stylesheets/extra.css
