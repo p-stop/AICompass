@@ -1,41 +1,65 @@
 site_name: AICompass
+site_description: 人工智能学院课程资源共享平台
+site_author: AICompass Team
+
+# GitHub 仓库信息
+repo_name: SYSU-SAIA/AICompass
+repo_url: https://github.com/SYSU-SAIA/AICompass
+edit_uri: edit/main/docs/
+
+# 主题设置
 theme:
+  name: material
+  language: zh
   features:
     - navigation.footer
-  name: material
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - content.action.edit
+    - content.footer.previous
+    - content.code.copy
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  
+  # 配色方案
   palette:
-    # Dark Mode
+    # 暗色模式
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
+        name: 切换到浅色模式
       primary: black
       accent: deep purple
-
-    # Light Mode
+    
+    # 浅色模式
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
+        name: 切换到深色模式
       primary: blue
       accent: deep orange
-nav:
-  - 欢迎: index.md
-  - 贡献指南: ContributionGuidelines.md
-  - 重要的辅学资源: important-source.md
 
+# 导航结构
+nav:
+  - 首页: 
+    - 欢迎: index.md
+    - 贡献指南: ContributionGuidelines.md
+    - 重要的辅学资源: important-source.md
   - 大一上学期:
     - 高等数学I: FirstYear_1/Calculus.md
     - 线性代数: FirstYear_1/LinearAlgebra.md
     - 大学物理上: FirstYear_1/CollegePhysics.md
     - 程序设计I: FirstYear_1/Programming.md
-  
   - 大一下学期:
     - 高等数学II: FirstYear_2/Calculus.md
     - 大学物理下: FirstYear_2/CollegePhysics.md
     - 程序设计II: FirstYear_2/Programming.md
     - 数字电路: FirstYear_2/DigitalCircuitsAndLogicDesign.md
-  
   - 大二上学期:
     - 概率统计: SecondYear_1/ProbabilityAndStatistics.md
     - 离散数学: SecondYear_1/DiscreteMath.md
@@ -43,25 +67,39 @@ nav:
     - 数据结构与算法: SecondYear_1/DataStructuresAndAlgorithms.md
     - 高级语言程序设计: SecondYear_1/Python.md
 
-
+# Markdown 扩展
 markdown_extensions:
+  - tables
+  - def_list
   - attr_list
+  - footnotes
+  - meta
+  - md_in_html
+  - nl2br
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.smartsymbols
   - admonition
   - pymdownx.tabbed:
       alternate_style: true
@@ -69,12 +107,32 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
       separator: "."
-      # 使用 Python 内置的 slugify 实现
       slugify: !!python/name:markdown.extensions.toc.slugify_unicode
-  - pymdownx.superfences
-  - pymdownx.tilde
-  - pymdownx.superfences
-  - pymdownx.tilde
 
+# 插件配置
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
+      fallback_to_build_date: true
+      locale: zh
+  - git-authors
+
+# 额外设置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SYSU-SAIA/AICompass
+      name: GitHub 仓库
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  generator: false
+
+# CSS 自定义
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
+
+# 时间格式本地化
+locale: zh_CN
