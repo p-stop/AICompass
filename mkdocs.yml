@@ -132,4 +132,4 @@ extra:
 
 # CSS 自定义
 extra_css:
-  - doc/stylesheets/extra.css
+  - docs/stylesheets/extra.css
