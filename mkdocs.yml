@@ -133,6 +133,3 @@ extra:
 # CSS 自定义
 extra_css:
   - stylesheets/extra.css
-
-# 时间格式本地化
-locale: zh_CN
