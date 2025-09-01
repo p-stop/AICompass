@@ -1,8 +1,13 @@
 # 概率论与数理统计
 
 ## 如何认识这门课
+作为数学基础课，概率论是现代庞大的人工智能理论体系的基石，也是各类工程学科中必会的基础知识。
 
 ## 优质学习资源
 
 ## 复习资料及应试策略
-- [历年真题](https://hf-mirror.com/cuikq/aicompass_repo/resolve/main/%E6%A6%82%E7%8E%87%E7%BB%9F%E8%AE%A1%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98.zip?download=true)
+- [历年真题](https://365.kdocs.cn/folder/cms4kxWcW1Ug)
+- 幺零柒同学贡献的概率论笔记:[链接](https://365.kdocs.cn/l/cs5oe78Kf6on)
+## 拓展
+- 如果你对更深入的概率论、随机过程等知识感兴趣，可以学习更加深入、难度更高的课程[UCB CS126:Probability theory](https://csdiy.wiki/%E6%95%B0%E5%AD%A6%E8%BF%9B%E9%98%B6/CS126/)
+- 作为目前最前沿、最热门的人工智能研究方向之一，生成模型取得了巨大的成就，例如大语言模型、图像音乐生成模型，这类模型都是以概率论为基础的，如果你对生成模型感兴趣，可以进阶学习深度生成模型：[优质课程推荐](https://csdiy.wiki/%E6%B7%B1%E5%BA%A6%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B/roadmap/)

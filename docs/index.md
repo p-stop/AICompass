@@ -7,8 +7,11 @@ hide:
 <div class="hero-section">
     <div class="hero-content">
         <h1>AICompass</h1>
-        <p class="hero-subtitle">消除信息差，共享学习资源</p>
-        <a href="ContributionGuidelines" class="cta-button">贡献指南</a>
+        <p class="hero-subtitle">分享信息经验，共享学习资源</p>
+        <div class="button-container">
+            <a href="ContributionGuidelines" class="cta-button">贡献指南</a>
+            <a href="important-source" class="cta-button">友链&致谢</a>
+        </div>
     </div>
 </div>
 
@@ -24,11 +27,11 @@ hide:
         <div class="semester-row">
             <a href="FirstYear_1/Calculus/" class="course-link">
                 <span class="semester">大一上学期</span>
-                <span class="course-list">高等数学I、线性代数、大学物理上、程序设计I</span>
+                <span class="course-list">高等数学I、线性代数、大学物理上、程序设计I等</span>
             </a>
             <a href="FirstYear_2/Calculus/" class="course-link">
                 <span class="semester">大一下学期</span>
-                <span class="course-list">高等数学II、大学物理下、程序设计II、数字电路</span>
+                <span class="course-list">高等数学II、大学物理下、程序设计II、数字电路等</span>
             </a>
         </div>
     </div>
@@ -36,13 +39,13 @@ hide:
     <div class="course-track">
         <h3>第二学年</h3>
         <div class="semester-row">
-            <a href="SecondYear_1/ProbabilityAndStatistics/" class="course-link">
+            <a href="SecondYear_1/DataStructuresAndAlgorithms/" class="course-link">
                 <span class="semester">大二上学期</span>
                 <span class="course-list">概率统计、离散数学、信号与系统、数据结构与算法</span>
             </a>
-            <a href="SecondYear_2/" class="course-link">
+            <a href="SecondYear_2/ArtificialIntelligence" class="course-link">
                 <span class="semester">大二下学期</span>
-                <span class="course-list">TODO</span>
+                <span class="course-list">人工智能原理、机器人原理等</span>
             </a>
         </div>
     </div>
@@ -50,26 +53,12 @@ hide:
     <div class="course-track">
         <h3>第三学年</h3>
         <div class="semester-row">
-            <a href="ThirdYear_1/" class="course-link">
+            <a href="ThirdYear_1/OperatingSystems" class="course-link">
                 <span class="semester">大三上学期</span>
-                <span class="course-list">TODO</span>
+                <span class="course-list">操作系统、机器学习等</span>
             </a>
-            <a href="ThirdYear_2/" class="course-link">
+            <a href="ThirdYear_2/Robotics" class="course-link">
                 <span class="semester">大三下学期</span>
-                <span class="course-list">TODO</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="course-track">
-        <h3>第四学年</h3>
-        <div class="semester-row">
-            <a href="FourthYear_1/" class="course-link">
-                <span class="semester">大四上学期</span>
-                <span class="course-list">TODO</span>
-            </a>
-            <a href="FourthYear_2/" class="course-link">
-                <span class="semester">大四下学期</span>
                 <span class="course-list">TODO</span>
             </a>
         </div>
@@ -77,6 +66,12 @@ hide:
 </div>
 
 <style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* 您可以调整这个值来改变按钮间的间距 */
+    }
+
     .semester-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -131,18 +126,18 @@ hide:
 </style>
     <div class="features-section">
         <div class="feature">
-            <h3>📚 优质辅学资源</h3>
-            <p>学习资源共享网站与深度学习入门</p>
-            <a href="important-source/" class="feature-link">浏览</a>
+            <h3>📚 科研&升学</h3>
+            <p>科研上手指南与保研、考研、升学规划</p>
+            <a href="ResearcherGuide/" class="feature-link">浏览</a>
         </div>
         <div class="feature">
-            <h3>💻 科研专区</h3>
-            <p>从入门到进阶的科研上手指南</p>
-            <a href="important-source/" class="feature-link">浏览</a>
+            <h3>💻 实习&就业</h3>
+            <p>本科实习就业指南与经验</p>
+            <a href="Work/" class="feature-link">浏览</a>
         </div>
         <div class="feature">
             <h3>🤝 参与贡献</h3>
-            <p>为这个项目贡献你的力量</p>
+            <p>欢迎为这个项目贡献你的力量</p>
             <a href="ContributionGuidelines/" class="feature-link">了解更多</a>
         </div>
     </div>
