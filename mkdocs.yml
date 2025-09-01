@@ -82,7 +82,9 @@ nav:
     - 机器学习: ThirdYear_1/MachineLearning.md
     - 数据库系统: ThirdYear_1/DatabaseSystems.md
     - 计算机网络: ThirdYear_1/ComputerNetworks.md
-    - 人机交互设计: ThirdYear_1/HCI.md 
+    - 人机交互设计: ThirdYear_1/HCI.md
+  - 大三下学期:
+    - 智能机器人: ThirdYear_2/Robotics.md
   - 科研&升学:
     - 前言: ResearcherGuide/index.md
   - 实习&就业:
